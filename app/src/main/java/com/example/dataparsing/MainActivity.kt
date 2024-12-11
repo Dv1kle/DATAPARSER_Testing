@@ -17,8 +17,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        listView = findViewById(R.id.currencyListView)
-        editText = findViewById(R.id.filterEditText)
+        listView = findViewById(R.id.currencyList)
+        editText = findViewById(R.id.searchField)
 
         currencyList.add("Loading currencies...")
 
@@ -34,5 +34,8 @@ class MainActivity : ComponentActivity() {
         })
 
         DataLoader(this, adapter).execute()
+        currencyList.add("USD")
+
     }
+
 }

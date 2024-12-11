@@ -6,15 +6,14 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/filterEditText"
+        android:id="@+id/searchField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter currency code (e.g., USD)"
-        android:padding="8dp"
-        android:inputType="text" />
+        android:hint="Search Currency" />
 
     <ListView
-        android:id="@+id/currencyListView"
+        android:id="@+id/currencyList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
